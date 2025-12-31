@@ -6,29 +6,26 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     const message = document.getElementById("message").value;
 
     fetch("https://backend-i5tp.onrender.com/api/contact", {
-
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            name: name,
-            email: email,
-            message: message
+            name,
+            email,
+            message
         })
     })
-    .then(response => response.json())
+    .then(res => {
+        if (!res.ok) throw new Error("Failed");
+        return res.json();
+    })
     .then(data => {
         alert("Message sent successfully!");
-        console.log(data);
+        document.getElementById("contactForm").reset();
     })
-    .catch(error => {
-        console.error("Error:", error);
-        alert("Failed to send message");
-    });
-});
-document.querySelectorAll(".skill-item").forEach(skill => {
-    skill.addEventListener("click", () => {
-        skill.classList.toggle("active");
+    .catch(err => {
+        console.error(err);
+        alert("Error sending message");
     });
 });

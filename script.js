@@ -5,7 +5,8 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    fetch("http://localhost:8080/api/contact", {
+    fetch("https://backend-i5tp.onrender.com/api/contact", {
+
         method: "POST",
         headers: {
             "Content-Type": "application/json"

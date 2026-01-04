@@ -167,46 +167,50 @@ footer {
         gap: 10px;
     }
 }
-/* Resume Section */
-.resume-container {
-    margin-top: 30px;
-    display: none;
+/* RESUME BUTTON CONTAINER */
+.resume-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-.resume-container.show {
-    display: block;
-}
-
-.resume-frame {
-    width: 100%;
-    height: 600px;
-    border: none;
-    border-radius: 12px;
-    margin-top: 20px;
-}
-
-/* Buttons */
+/* COMMON BUTTON */
 .btn {
-    padding: 12px 25px;
-    margin: 10px;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    background: #38bdf8;
-    color: #000;
-    transition: 0.3s;
+  padding: 12px 22px;
+  font-size: 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;   /* 🔥 prevents text breaking */
 }
 
-.btn:hover {
-    background: #0ea5e9;
+/* PRIMARY BUTTON */
+.btn.primary {
+  background-color: #3db4f2;
+  color: #000;
+  border: none;
 }
 
+/* OUTLINE BUTTON */
 .btn.outline {
-    background: transparent;
-    border: 2px solid #38bdf8;
-    color: #38bdf8;
+  border: 2px solid #3db4f2;
+  color: #3db4f2;
+  background: transparent;
 }
+
+/* 🔥 MOBILE FIX */
+@media (max-width: 768px) {
+  .resume-buttons {
+    flex-direction: column;   /* stack buttons */
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;              /* full width */
+  }
+}
+
 /* ACADEMICS SECTION */
 .academics-grid {
     display: grid;
@@ -270,14 +274,5 @@ footer {
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-/* MOBILE FIX */
-@media (max-width: 768px) {
-  .cert-grid {
-    grid-template-columns: 1fr;
-  }
 
-  .cert-card {
-    text-align: center;
-  }
-}
 

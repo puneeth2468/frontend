@@ -283,8 +283,8 @@ footer {
 
 /* View Resume Button */
 .btn-primary {
-    background-color: #3bbcff;
-    color: #000;
+    border: 2px solid #3bbcff;
+    color: #3bbcff;
     padding: 10px 22px;
     border-radius: 25px;
     font-weight: 600;
@@ -292,8 +292,8 @@ footer {
     transition: 0.3s ease;
 }
 
-.btn-primary:hover {
-    background-color: #1fa3e0;
+.btn-outline:hover {
+    background-color: #3bbcff;
     color: #000;
 }
 

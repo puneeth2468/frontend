@@ -167,37 +167,7 @@ footer {
         gap: 10px;
     }
 }
-/* RESUME BUTTON CONTAINER */
-.resume-buttons {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
 
-/* COMMON BUTTON */
-.btn {
-  padding: 12px 22px;
-  font-size: 15px;
-  border-radius: 30px;
-  text-decoration: none;
-  text-align: center;
-  white-space: nowrap;   /* 🔥 prevents text breaking */
-}
-
-/* PRIMARY BUTTON */
-.btn.primary {
-  background-color: #3db4f2;
-  color: #000;
-  border: none;
-}
-
-/* OUTLINE BUTTON */
-.btn.outline {
-  border: 2px solid #3db4f2;
-  color: #3db4f2;
-  background: transparent;
-}
 
 /* 🔥 MOBILE FIX */
 @media (max-width: 768px) {

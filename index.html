@@ -185,18 +185,25 @@
 </section>
 
 <!-- CONTACT -->
-<section class="contact">
+<section class="contact" id="contact">
     <h2>Contact Me</h2>
 
     <form id="contactForm">
-        <p>Name:</p><input type="text" id="name" placeholder="Your Name" required><br>
-        <p>Email:</p><input type="email" id="email" placeholder="Your Email" required><br>
-        <p>Message:</p><textarea id="message" placeholder="Your Message" required></textarea><br>
+        <p>Name:</p>
+        <input type="text" name="name" required>
+
+        <p>Email:</p>
+        <input type="email" name="email" required>
+
+        <p>Message:</p>
+        <textarea name="message" required></textarea>
+
         <button type="submit">Send Message</button>
     </form>
 
     <p id="responseMsg"></p>
 </section>
+
 
 <footer>
     <p>© 2025 Puneeth Bandi | All Rights Reserved</p>

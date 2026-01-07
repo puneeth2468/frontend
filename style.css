@@ -75,7 +75,7 @@ body {
   width: 100%;
   max-width: 1100px;
   padding: 0 40px;
-  text-align: left; /* desktop look like before */
+  text-align: center; /* desktop look like before */
 }
 
 .hero h1 {

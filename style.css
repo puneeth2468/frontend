@@ -318,4 +318,16 @@ body {
     background-color: #3bbcff;
     color: #000;
 }
+/* FOOTER STYLING */
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer p {
+  color: #ffffff;
+  margin: 0;
+  font-size: 14px;
+}
 

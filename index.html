@@ -184,21 +184,29 @@
     </div>
 </section>
 
-<form
-  action="https://formspree.io/f/xeeoyoad"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-card">
+    <h2>Contact Me</h2>
+
+    <form
+      action="https://formspree.io/f/xeeoyoad"
+      method="POST"
+    >
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <label>Message</label>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
 
 <footer>
     <p>© 2025 Puneeth Bandi | All Rights Reserved</p>

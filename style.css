@@ -134,39 +134,66 @@ body {
     border: 1px solid #38bdf8;
 }
 
-/* CONTACT */
-.contact {
-    width: 300px;
-    margin: 80px auto;
-    background: rgba(11, 9, 9, 0.566);
-    padding: 20px;
-    border-radius: 8px;
-    align-content: center;
-    align-self: center;
-    text-align: center;
+/* CONTACT SECTION */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
 }
 
-.socials a {
-    margin: 10px;
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: bold;
+.contact-card {
+  background: #0d0d0d;
+  padding: 30px;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #010204fe;
+.contact-card h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-    }
+.contact-card label {
+  display: block;
+  text-align: left;
+  color: #cccccc;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.contact-card textarea {
+  resize: none;
+  height: 80px;
+}
+
+.contact-card button {
+  width: 100%;
+  padding: 10px;
+  background: #00bcd4;
+  border: none;
+  border-radius: 20px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-card button:hover {
+  background: #00a0b5;
+}
+
 
 
 /* 🔥 MOBILE FIX */
